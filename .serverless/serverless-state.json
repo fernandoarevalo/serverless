@@ -146,7 +146,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/my-express-application/dev/1563250304121-2019-07-16T04:11:44.121Z/my-express-application.zip"
+                "S3Key": "serverless/my-express-application/dev/1563336564358-2019-07-17T04:09:24.358Z/my-express-application.zip"
               },
               "FunctionName": "my-express-application-dev-app",
               "Handler": "index.handler",
@@ -295,7 +295,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1563250296635": {
+          "ApiGatewayDeployment1563336521239": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -449,6 +449,22 @@
             "http": "ANY {proxy+}"
           }
         ],
+        "getUser": {
+          "handler": "index.handler",
+          "events": [
+            {
+              "http": "GET /users/{proxy+}"
+            }
+          ]
+        },
+        "createUser": {
+          "handler": "index.handler",
+          "events": [
+            {
+              "http": "POST /users"
+            }
+          ]
+        },
         "name": "my-express-application-dev-app",
         "package": {},
         "memory": 1024,
@@ -489,7 +505,7 @@
     "artifact": "/Users/fernandoarevalo/Documents/Cursos/Serverless/my-express-application/.serverless/my-express-application.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/my-express-application/dev/1563250304121-2019-07-16T04:11:44.121Z",
+    "artifactDirectoryName": "serverless/my-express-application/dev/1563336564358-2019-07-17T04:09:24.358Z",
     "artifact": "my-express-application.zip"
   }
 }

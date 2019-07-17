@@ -124,7 +124,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/my-express-application/dev/1563250304121-2019-07-16T04:11:44.121Z/my-express-application.zip"
+          "S3Key": "serverless/my-express-application/dev/1563336564358-2019-07-17T04:09:24.358Z/my-express-application.zip"
         },
         "FunctionName": "my-express-application-dev-app",
         "Handler": "index.handler",
@@ -273,7 +273,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1563250296635": {
+    "ApiGatewayDeployment1563336521239": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
